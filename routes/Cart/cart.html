@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="../../global.css" />
+        <title>Vexora - Your Cart</title>
+        <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon" />
+        <style>
+            /* Custom Hide Scrollbar for cleaner look */
+            input[type='number']::-webkit-inner-spin-button,
+            input[type='number']::-webkit-outer-spin-button {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body class="bg-white">
+        <div class="bg-(--button) h-12 text-[14px] flex w-full justify-center items-center">
+            <span class="text-(--text)">
+                Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                <span class="font-semibold leading-6 underline cursor-pointer">SHOP NOW</span>
+            </span>
+        </div>
+
+        <header class="z-50 bg-(--primary) sticky top-0 flex justify-between items-center px-[8.438rem] pt-5 mt-5 w-full border-b-[0.5px] border-(--button)/30 pb-4">
+            <div class="flex justify-between items-center gap-[11.875rem]">
+                <span class="text-(--text2) text-2xl font-bold text-center">Vexora</span>
+                <nav>
+                    <ul class="flex justify-center items-center gap-12 text-(--text2) text-[16px]">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li class="hover:scale-[101%] hover:-translate-y-1 transition-all duration-200"><a>Shop</a></li>
+                        <li class="hover:scale-[101%] hover:-translate-y-1 transition-all duration-200"><a>About</a></li>
+                        <li class="hover:scale-[101%] hover:-translate-y-1 transition-all duration-200"><a>Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex gap-6 w-max justify-center items-center">
+                <div class="bg-(--secondary) w-[15.188rem] h-[2.375rem] rounded-[4px] relative">
+                    <input type="search" placeholder="What are you looking for?" class="w-full h-full pl-5 p-2 outline-none placeholder:text-xs text-sm" />
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="absolute top-1.5 right-2">
+                        <path d="M20 20L16.2223 16.2156M18.3158 11.1579C18.3158 13.0563 17.5617 14.8769 16.2193 16.2193C14.8769 17.5617 13.0563 18.3158 11.1579 18.3158C9.2595 18.3158 7.43886 17.5617 6.0965 16.2193C4.75413 14.8769 4 13.0563 4 11.1579C4 9.2595 4.75413 7.43886 6.0965 6.0965C7.43886 4.75413 9.2595 4 11.1579 4C13.0563 4 14.8769 4.75413 16.2193 6.0965C17.5617 7.43886 18.3158 9.2595 18.3158 11.1579V11.1579Z" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="flex gap-4 justify-center items-center w-max">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M11 7C8.239 7 6 9.216 6 11.95C6 14.157 6.875 19.395 15.488 24.69C15.6423 24.7839 15.8194 24.8335 16 24.8335C16.1806 24.8335 16.3577 24.7839 16.512 24.69C25.125 19.395 26 14.157 26 11.95C26 9.216 23.761 7 21 7C18.239 7 16 10 16 10C16 10 13.761 7 11 7Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 16.6667H25.59C25.7056 16.6667 25.8177 16.6267 25.9072 16.5535C25.9966 16.4802 26.0579 16.3782 26.0806 16.2648L27.8806 7.26479C27.8951 7.19222 27.8934 7.11733 27.8755 7.04552C27.8575 6.97371 27.8239 6.90678 27.7769 6.84956C27.73 6.79234 27.6709 6.74625 27.604 6.71462C27.5371 6.68299 27.464 6.66661 27.39 6.66666H8" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+            </div>
+        </header>
+
+        <main class="px-[8.438rem] py-20">
+            <div class="mb-20 text-sm text-gray-500">
+                Home / <span class="text-black font-medium">Cart</span>
+            </div>
+
+            <div class="grid grid-cols-4 items-center shadow-sm rounded-[4px] px-10 py-6 mb-10 font-medium border border-gray-50">
+                <span>Product</span>
+                <span class="text-center">Price</span>
+                <span class="text-center">Quantity</span>
+                <span class="text-right">Subtotal</span>
+            </div>
+
+            <div id="cart-items-container" class="flex flex-col gap-10">
+                </div>
+
+            <div class="flex justify-between mt-6">
+                <button onclick="window.location.href='../../index.html'" class="px-12 py-4 border border-black/50 rounded-[4px] font-medium hover:bg-gray-50 cursor-pointer">
+                    Return To Shop
+                </button>
+                <button onclick="renderCart()" class="px-12 py-4 border border-black/50 rounded-[4px] font-medium hover:bg-gray-50 cursor-pointer">
+                    Update Cart
+                </button>
+            </div>
+
+            <div class="flex justify-between mt-20 items-start">
+                <div class="flex gap-4">
+                    <input type="text" placeholder="Coupon Code" class="border border-black rounded-[4px] px-6 py-4 w-[300px] outline-none">
+                    <button class="bg-(--button2) text-(--text) px-12 py-4 rounded-[4px] font-medium cursor-pointer">Apply Coupon</button>
+                </div>
+
+                <div class="border-2 border-black rounded-[4px] p-8 w-[470px]">
+                    <h3 class="text-xl font-medium mb-6">Cart Total</h3>
+                    <div class="flex justify-between pb-4 border-b border-black/20">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">$0</span>
+                    </div>
+                    <div class="flex justify-between py-4 border-b border-black/20">
+                        <span>Shipping:</span>
+                        <span>Free</span>
+                    </div>
+                    <div class="flex justify-between pt-4 mb-8 font-medium">
+                        <span>Total:</span>
+                        <span id="cart-total">$0</span>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="bg-(--button2) text-(--text) px-12 py-4 rounded-[4px] font-medium w-max cursor-pointer">Proceed to checkout</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="cart.js"></script>
+    </body>
+</html>
