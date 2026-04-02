@@ -45,10 +45,9 @@ function renderCart() {
 
 function updateTotals(amount) {
     subtotalElement.textContent = `$${amount}`;
-    totalElement.textContent = `$${amount}`; // Add shipping logic here if needed
+    totalElement.textContent = `$${amount}`;
 }
 
-// Global functions for the inline HTML attributes
 window.updateQty = (index, val) => {
     let cart = JSON.parse(localStorage.getItem("vexora_cart"));
     cart[index].quantity = parseInt(val) || 1;
@@ -63,5 +62,4 @@ window.removeItem = (index) => {
     renderCart();
 };
 
-// Initial Load
 document.addEventListener("DOMContentLoaded", renderCart);
