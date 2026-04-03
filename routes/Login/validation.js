@@ -27,7 +27,7 @@ form.addEventListener("submit", function (e) {
     }
 
     if (isValid) {
-        alert("Login successful!");
+        location.replace("../Shop/shop.html")
     }
 });
 
